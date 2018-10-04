@@ -124,6 +124,7 @@ module.exports = async function genMDX({
   }
 
   results.scopeImports = imports;
+  results.scopeIdentifiers = identifiers;
   // TODO: be more sophisticated about these replacements
   results.body = result.code
     .replace("export default", "return")
