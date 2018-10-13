@@ -23,7 +23,7 @@ or as an import:
 
 ```javascript
 import PageLayout from './src/components/page-layout';
-export default PageLayout
+export default ({ children, ...props }) => <PageLayout {...props}>{children}</PageLayout>
 
 # My MDX
 
